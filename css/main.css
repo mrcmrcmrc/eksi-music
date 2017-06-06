@@ -1,0 +1,116 @@
+img
+{
+    display: block;
+    width: 100%;
+}
+
+body
+{
+    background-color: #F6F6F6
+}
+
+.box 
+{
+    position: relative;
+    border: 3px ridge #404040;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+
+    opacity: 0.427;
+    box-shadow: none;
+    transition: opacity 0.8s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    opacity: 1 !important;
+    box-shadow: 0px 0px 21px 6px #F6F6F6 !important;
+}
+
+.container {
+    width : 85%;
+    background-color: #2B2B2B;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.box .info {
+    font-family: 'Titillium Web', sans-serif;
+    opacity: 0;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 5px;
+    color: white;
+    font-weight:700;
+    font-size: 1.1em;
+    background: rgb(21,21,21);
+    word-spacing: 1px;
+    text-align: center;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;   
+}
+
+.box:hover .info {
+    opacity: 0.84;
+    /*box-shadow: 0px 0px 30px 8px #F6F6F6;*/
+}
+
+.mainControls {
+    height: 40px;
+    text-align: center;
+    width: 25%;
+    display: inline-block;
+}
+
+.otherControls {
+    height: 40px;
+    text-align: center;
+    width: 25%;
+}
+
+span.glyphicon {
+    color: rgb(21,21,21);
+    font-size: 2.7em;
+    border-bottom: 0.1px groove darkgray;
+    padding: 6px;
+    transition-property: background, opacity;
+    transition-duration: 0.5s;
+}
+
+span.glyphicon:hover {
+    opacity: 0.5;
+    color: white;
+    background-color: rgba(158,0,8,0.93);
+}
+
+span.glyphicon-play {
+    color : black;
+}
+
+.musicPlayer {
+    position:fixed;
+    bottom:0px;
+    width:50%;
+    left:25%;
+    height: 10%;
+    background-color:#8f8d8f;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.46);
+    z-index: 10;
+    margin-bottom: 7px;
+    text-align: center;
+    display: table;
+    border:1px groove #1f1c16;
+    border-radius: 60px;
+}
+
+#player {
+    display: none;
+}
